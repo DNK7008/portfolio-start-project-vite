@@ -31,5 +31,5 @@ const Photo = styled.img`
   object-fit: cover;
 `;
 
-const MainTitle = styled.h1``;
-const MainName = styled.h2``;
+// const MainTitle = styled.h1``;
+// const MainName = styled.h2``;
