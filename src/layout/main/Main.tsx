@@ -1,34 +1,51 @@
 import styled from "styled-components";
-import photo from "../../assets/img/main-foto.webp";
+import photo from "../../assets/img/main-foto2.jpg";
 import { FlexWrapper } from "../../components/FlexWrapper";
 
 export const Main = () => {
   return (
-    <MainContainer>
+    <StyledMain>
       <FlexWrapper
         justifyContent="space-around"
         alignItems="center"
-        flexWrap="nowrap"
+        flexWrap="wrap"
       >
-      <div>
-        <span>Hi There</span>
-        <h2>I am Svetlana Dyablo</h2>
-        <h1>A Web Developer.</h1>
-      </div>
-      <Photo src={photo} alt="foto" />
+        <div>
+          <span>Hi There</span>
+          <h2>I am Denis Soroko</h2>
+          <h1>A Web Developer.</h1>
+        </div>
+        {/* <BoxPhoto> */}
+          <Photo src={photo} alt="foto" />
+        {/* </BoxPhoto> */}
       </FlexWrapper>
-    </MainContainer>
+    </StyledMain>
   );
 };
 
-const MainContainer = styled.main`
+const StyledMain = styled.main`
   min-height: 100vh;
-  background-color: #fdc4c4;
+  background-color: #685e54;
 `;
+
+// const BoxPhoto = styled.div`
+//   position: relative;
+//   overflow: hidden;
+//   width: 350px;
+//   height: 350px;
+// `;
 const Photo = styled.img`
-  width: 350px;
-  min-height: 350px;
+  width: 480px;
+  height: 350px;
   object-fit: cover;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+  object-fit: cover; */
+  border-radius: 23px;
 `;
 
 // const MainTitle = styled.h1``;

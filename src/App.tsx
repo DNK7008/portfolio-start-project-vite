@@ -1,12 +1,14 @@
 import './App.css'
 import { Header } from './layout/header/Header';
 import { Main } from './layout/main/Main';
+import { Skills } from './layout/skills/skills';
 
 function App() {
     return (
         <div className="App">
             <Header />
             <Main />
+            <Skills />
         </div>
     )
 }

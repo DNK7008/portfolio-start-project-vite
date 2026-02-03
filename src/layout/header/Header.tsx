@@ -5,10 +5,8 @@ import { Menu } from "../../components/menu/Menu";
 export const Header = () => {
   return (
     <StyledHeader>
-      <>
         <Logo />
         <Menu />
-      </>
     </StyledHeader>
   );
 };
@@ -16,4 +14,5 @@ export const Header = () => {
 const StyledHeader = styled.header`
   display: flex;
   justify-content: space-around;
+  background-color: #6d625c;
 `;
