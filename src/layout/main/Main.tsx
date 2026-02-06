@@ -15,7 +15,8 @@ export const Main = () => {
           <h2>I am Denis Soroko</h2>
           <h1>A Web Developer.</h1>
         </div>
-        {/* <BoxPhoto> */}
+        {/* BOXPHOTO для позиционирования контента по центру */}
+        {/* <BoxPhoto> */} 
           <Photo src={photo} alt="foto" />
         {/* </BoxPhoto> */}
       </FlexWrapper>
@@ -28,6 +29,7 @@ const StyledMain = styled.main`
   background-color: #685e54;
 `;
 
+// Стили для BOXPHOTO
 // const BoxPhoto = styled.div`
 //   position: relative;
 //   overflow: hidden;
@@ -38,6 +40,7 @@ const Photo = styled.img`
   width: 480px;
   height: 350px;
   object-fit: cover;
+  /* стили для позиционирования BOXPHOTO */
   /* position: absolute;
   top: 50%;
   left: 50%;
@@ -45,6 +48,7 @@ const Photo = styled.img`
   width: 350px;
   height: 350px;
   object-fit: cover; */
+  /* стили для позиционирования BOXPHOTO */
   border-radius: 23px;
 `;
 

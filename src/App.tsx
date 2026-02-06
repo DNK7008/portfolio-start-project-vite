@@ -1,7 +1,7 @@
 import './App.css'
 import { Header } from './layout/header/Header';
 import { Main } from './layout/main/Main';
-import { Skills } from './layout/skills/skills';
+import { Skills } from './layout/skills/Skills';
 
 function App() {
     return (

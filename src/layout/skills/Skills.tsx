@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Icon } from "../../components/icon/Icon";
+import { SectionTitle } from "../../components/SectionTitle";
 
 export const Skills = () => {
   return (
     <StyledSkillsSection>
-      <StyledSkillsTitle>My Skills</StyledSkillsTitle>
+      <SectionTitle>My Skills</SectionTitle>
       <FlexWrapper
         flexWrap="wrap"
         justifyContent="space-around"
@@ -20,55 +21,12 @@ export const Skills = () => {
             eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
           </AboutTextCard>
         </StyledCardSkill>
-        <StyledCardSkill>
-          <Icon iconId={"htmlSkill"} />
-          <TitleCard>html5</TitleCard>
-          <AboutTextCard>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
-          </AboutTextCard>
-        </StyledCardSkill>
-        <StyledCardSkill>
-          <Icon iconId={"htmlSkill"} />
-          <TitleCard>html5</TitleCard>
-          <AboutTextCard>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
-          </AboutTextCard>
-        </StyledCardSkill>
-        <StyledCardSkill>
-          <Icon iconId={"htmlSkill"} />
-          <TitleCard>html5</TitleCard>
-          <AboutTextCard>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
-          </AboutTextCard>
-        </StyledCardSkill>
-        <StyledCardSkill>
-          <Icon iconId={"htmlSkill"} />
-          <TitleCard>html5</TitleCard>
-          <AboutTextCard>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
-          </AboutTextCard>
-        </StyledCardSkill>
-        <StyledCardSkill>
-          <Icon iconId={"htmlSkill"} />
-          <TitleCard>html5</TitleCard>
-          <AboutTextCard>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
-          </AboutTextCard>
-        </StyledCardSkill>
       </FlexWrapper>
     </StyledSkillsSection>
   );
 };
 
 const StyledSkillsSection = styled.section``;
-const StyledSkillsTitle = styled.div`
-  text-align: center;
-`;
 const StyledCardSkill = styled.div`
   max-width: 380px;
   min-height: 338px;
