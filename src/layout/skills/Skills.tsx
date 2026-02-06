@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FlexWrapper } from "../../components/FlexWrapper";
-import { Icon } from "../../components/icon/Icon";
 import { SectionTitle } from "../../components/SectionTitle";
+import { CardSkill } from "./card-skill/CardSkill";
 
 export const Skills = () => {
   return (
@@ -13,23 +13,47 @@ export const Skills = () => {
         alignItems="center"
         gap="30px"
       >
-        <StyledCardSkill>
-          <Icon iconId={"htmlSkill"} />
-          <TitleCard>html5</TitleCard>
-          <AboutTextCard>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
-          </AboutTextCard>
-        </StyledCardSkill>
+        <CardSkill
+          icon={"htmlSkill"}
+          title="HTML5"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        />
+        <CardSkill
+          icon="cssSkiil"
+          title="CSS3"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        />
+        <CardSkill
+          icon="reactSkills"
+          title="REACT"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        />
+        <CardSkill
+          icon="typescriptSkill"
+          title="REACT"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        />
+        <CardSkill
+          icon="styledComponentsSkill"
+          title="STYLED COMPONENTS"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        />
+        <CardSkill
+          icon="figmaSkill"
+          title="WEB DESIGN"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua Ut enim"
+        />
       </FlexWrapper>
     </StyledSkillsSection>
   );
 };
 
-const StyledSkillsSection = styled.section``;
-const StyledCardSkill = styled.div`
-  max-width: 380px;
-  min-height: 338px;
+const StyledSkillsSection = styled.section`
+  background-color: #85837b;
 `;
-const TitleCard = styled.h3``;
-const AboutTextCard = styled.p``;
