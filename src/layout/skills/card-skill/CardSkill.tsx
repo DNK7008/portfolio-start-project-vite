@@ -21,4 +21,3 @@ const StyledCardSkill = styled.div`
 `;
 const TitleSkill = styled.h3``;
 const TextSkill = styled.p``;
-        
