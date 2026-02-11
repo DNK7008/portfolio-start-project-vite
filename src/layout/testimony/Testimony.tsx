@@ -8,7 +8,7 @@ export const Testimony = () => {
   return (
     <SectionTestimony>
       <SectionTitle>Testimony</SectionTitle>
-      <FlexWrapper alignItems="center" flexDirection="column">
+      <FlexWrapper alignItems="center" flexDirection="column" >
         <Icon iconId="quote" />
         <Slider />
       </FlexWrapper>
