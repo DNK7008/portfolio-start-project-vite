@@ -33,7 +33,6 @@ const Slide = styled.div`
 const Text = styled.p``;
 const Author = styled.span``;
 const Pagination = styled.div`
-
   span {
     display: inline-block;
     width: 10px;
