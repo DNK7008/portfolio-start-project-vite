@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { Logo } from "../../components/logo/Logo";
-import { Menu } from "../../components/menu/Menu";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
-import { Theme } from "../../styles/Theme";
+import { HeaderMenu } from "./headerMenu/HeaderMenu";
 
 const menuItems = ["Home", "Skills", "Works", "Testimony", "Contact"];
 export const Header = () => {
@@ -12,7 +11,7 @@ export const Header = () => {
       <Container>
         <FlexWrapper justifyContent="space-between" alignItems="center">
           <Logo />
-          <Menu menuItems={menuItems} />
+          <HeaderMenu menuItems={menuItems} />
         </FlexWrapper>
       </Container>
     </StyledHeader>
