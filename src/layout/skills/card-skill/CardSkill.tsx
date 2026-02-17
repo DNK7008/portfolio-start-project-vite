@@ -17,7 +17,6 @@ export const CardSkill = (props: CardSkillPropsType) => {
 const StyledCardSkill = styled.div`
   max-width: 380px;
   min-height: 338px;
-  background-color: #d1ccae;
 `;
 const TitleSkill = styled.h3``;
 const TextSkill = styled.p``;

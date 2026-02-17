@@ -20,6 +20,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: ${Theme.color.font};
+  line-height: 1,2;
 
   a {
     text-decoration: none;
@@ -32,6 +33,10 @@ body {
   button {
     background-color: unset;
     border: none;
+  }
+
+  section {
+    padding: 100px 0;
   }
 
   section:nth-of-type(odd) {
