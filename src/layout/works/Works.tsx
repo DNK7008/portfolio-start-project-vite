@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { SectionTitle } from "../../components/SectionTitle";
-import { Menu } from "../../components/menu/Menu";
+import { TabMenu } from "./tab-menu/TabMenu";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Work } from "./card-work/Work";
 import cardImageSocial from "./../../assets//img/social-work_1.webp";
@@ -14,8 +14,8 @@ export const Works = () => {
     <SectionWorks>
       <Container>
         <SectionTitle>My Works</SectionTitle>
-        <Menu menuItems={workItems} />
-        <FlexWrapper >
+        <TabMenu menuItems={workItems} />
+        <FlexWrapper justifyContent="sapce-between" >
           <Work
             src={cardImageSocial}
             title="Social Network"

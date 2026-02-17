@@ -1,14 +1,14 @@
 import styled from "styled-components";
+import { Link } from "../../../components/Link";
 
-
-export const Menu = (props: {menuItems: Array<string>}) => {
+export const TabMenu = (props: { menuItems: Array<string> }) => {
   return (
     <StyledMenu>
       <ul>
         {props.menuItems.map((item, index) => {
           return (
-            <li key={index} >
-              <a href="#">{item}</a>
+            <li key={index}>
+              <Link href="#">{item}</Link>
             </li>
           );
         })}
@@ -20,6 +20,9 @@ export const Menu = (props: {menuItems: Array<string>}) => {
 const StyledMenu = styled.nav`
   ul {
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
   }
 `;
+
