@@ -12,8 +12,6 @@ export const Skills = () => {
         <FlexWrapper
           flexWrap="wrap"
           justifyContent="space-between"
-          // alignItems="center"
-          gap="30px"
         >
           <CardSkill
             icon={"htmlSkill"}

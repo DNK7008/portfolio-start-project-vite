@@ -45,6 +45,18 @@ body {
   section:nth-of-type(even) {
     background-color: ${Theme.color.primaryBg};
   }
+
+  h3 {
+    font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  }
+
+  p {
+    font-weight: 400;
+  font-size: 14px;
+  }
 }
 
 code {
