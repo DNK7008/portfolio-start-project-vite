@@ -34,6 +34,8 @@ body {
   button {
     background-color: unset;
     border: none;
+    cursor: pointer;
+    color: ${Theme.color.font}
   }
 
   section {
@@ -55,7 +57,7 @@ body {
   }
 
   p {
-    font-weight: 400;
+  font-weight: 400;
   font-size: 14px;
   }
 }

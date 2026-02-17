@@ -13,9 +13,9 @@ export const Works = () => {
   return (
     <SectionWorks>
       <Container>
-        <SectionTitle>My Works</SectionTitle>
-        <TabMenu menuItems={workItems} />
-        <FlexWrapper justifyContent="sapce-between" >
+          <SectionTitle>My Works</SectionTitle>
+          <TabMenu menuItems={workItems} />   
+        <FlexWrapper justifyContent="space-between">
           <Work
             src={cardImageSocial}
             title="Social Network"
