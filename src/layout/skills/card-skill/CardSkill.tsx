@@ -24,7 +24,7 @@ const StyledCardSkill = styled.div`
   padding: 68px 20px 42px;
 `;
 
-const IconWrapper = styled.div`
+export const IconWrapper = styled.div`
   position: relative;
 
   &::before {

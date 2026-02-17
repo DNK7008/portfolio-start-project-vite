@@ -8,9 +8,15 @@ export const Button = styled.button`
   text-transform: uppercase;
   width: 170px;
   height: 32px;
+  z-index: 0;
 
   position: relative;
-
+  &:hover {
+    &::before {
+      height: 100%;
+      width: 100%;
+    }
+  }
   &::before {
     content: "";
     display: inline-block;
@@ -22,5 +28,6 @@ export const Button = styled.button`
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: -1;
   }
 `;

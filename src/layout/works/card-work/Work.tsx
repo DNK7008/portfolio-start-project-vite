@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "../../../components/Link";
 import { Theme } from "../../../styles/Theme";
+import { Button } from "../../../components/Button";
 
 type WorkPropsType = {
   src: string;
@@ -12,6 +13,7 @@ export const Work = (props: WorkPropsType) => {
     <BoxCard>
       <WrapperImage>
         <Image src={props.src} alt="image" />
+        <Button>View Project</Button>
       </WrapperImage>
       <WrapperAbout>
         <Title>{props.title}</Title>
@@ -38,6 +40,7 @@ const BoxCard = styled.div`
 `;
 const WrapperImage = styled.div`
   position: relative;
+
   &:hover {
     &::before {
       content: "";
@@ -47,7 +50,23 @@ const WrapperImage = styled.div`
       right: 0;
       bottom: 0;
       fill: rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(4px);
+    }
+    ${Button} {
+      opacity: 1;
+    }
+  }
+
+  ${Button} {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    &::before {
+      height: 100%;
+      width: 100%;
     }
   }
 `;

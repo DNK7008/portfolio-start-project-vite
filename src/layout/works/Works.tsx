@@ -13,9 +13,9 @@ export const Works = () => {
   return (
     <SectionWorks>
       <Container>
-          <SectionTitle>My Works</SectionTitle>
-          <TabMenu menuItems={workItems} />   
-        <FlexWrapper justifyContent="space-between">
+        <SectionTitle>My Works</SectionTitle>
+        <TabMenu menuItems={workItems} />
+        <FlexWrapper justifyContent="space-between" alignItems="flex-start">
           <Work
             src={cardImageSocial}
             title="Social Network"
@@ -26,6 +26,7 @@ export const Works = () => {
             src={cardImageTimer}
             title="Social Network"
             text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
           />
         </FlexWrapper>
