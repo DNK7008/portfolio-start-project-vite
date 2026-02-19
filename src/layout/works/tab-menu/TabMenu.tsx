@@ -25,4 +25,3 @@ const StyledMenu = styled.nav`
     margin-bottom: 40px;
   }
 `;
-
