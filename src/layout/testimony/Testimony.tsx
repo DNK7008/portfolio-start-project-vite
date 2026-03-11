@@ -20,7 +20,6 @@ export const Testimony = () => {
 };
 
 const SectionTestimony = styled.section`
-  /* min-height: 50vh; */
 
   ${IconWrapper} {
     margin: 40px 0 72px;
