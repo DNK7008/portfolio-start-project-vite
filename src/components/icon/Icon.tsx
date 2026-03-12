@@ -10,6 +10,7 @@ type IconsPropsType = {
 export const Icon = (props: IconsPropsType) => {
   return (
     <svg
+    
       width={props.width || "50"}
       height={props.height || "50"}
       viewBox={props.viewBox || "0 0 50 50"}

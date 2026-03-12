@@ -25,6 +25,7 @@ body {
   a {
     text-decoration: none;
     color: ${Theme.color.font};
+    cursor: pointer;
   }
 
   ul {

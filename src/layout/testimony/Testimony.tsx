@@ -4,17 +4,20 @@ import { Icon } from "../../components/icon/Icon";
 import { Slider } from "../../components/slider/Slider";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { IconWrapper } from "../skills/card-skill/CardSkill";
+import { Container } from "../../components/Container";
 
 export const Testimony = () => {
   return (
     <SectionTestimony>
-      <SectionTitle>Testimony</SectionTitle>
-      <FlexWrapper alignItems="center" flexDirection="column">
-        <IconWrapper>
-          <Icon iconId="quote" />
-        </IconWrapper>
-        <Slider />
-      </FlexWrapper>
+      <Container>
+        <SectionTitle>Testimony</SectionTitle>
+        <FlexWrapper alignItems="center" flexDirection="column">
+          <IconWrapper>
+            <Icon iconId="quote" />
+          </IconWrapper>
+          <Slider />
+        </FlexWrapper>
+      </Container>
     </SectionTestimony>
   );
 };
