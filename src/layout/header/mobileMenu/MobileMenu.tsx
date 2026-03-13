@@ -37,6 +37,33 @@ const StyledMobileMenu = styled.nav`
   }
 `;
 
+const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-color: rgba(31, 31, 32, 0.9);
+  display: none;
+
+  ${(props) =>
+    props.isOpen &&
+    css<{ isOpen: boolean }>`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    `}
+
+  ul {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
   top: -100px;
@@ -72,7 +99,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       ${(props) =>
         props.isOpen &&
         css<{ isOpen: boolean }>`
-          transform: rotate (-45deg) translateY(0px);
+          transform: rotate(-45deg) translateY(0);
         `}
     }
     &::after {
@@ -87,34 +114,10 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       ${(props) =>
         props.isOpen &&
         css<{ isOpen: boolean }>`
-          transform: rotate (-45deg) translateY(0px);
+          transform: rotate(45deg) translateY(0);
           width: 36px;
         `}
     }
-  }
-`;
-
-const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 9999;
-  background-color: rgba(31, 31, 32, 0.9);
-  display: none;
-
-  ${(props) =>
-    props.isOpen &&
-    css<{ isOpen: boolean }>`
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    `}
- 
-  ul {
-    display: flex;
-    gap: 30px;
   }
 `;
 
@@ -146,7 +149,6 @@ const Mask = styled.span`
 
 const ListItem = styled.li`
   position: relative;
-
 
   &::before {
     content: "";
